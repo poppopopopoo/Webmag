@@ -1,0 +1,86 @@
+{
+    "news": {
+      "nomNews": "Muscle & Fitness",
+      "textAccroche": "Tout ce que vous devez savoir pour sculpter votre corps et améliorer vos performances",
+      "CTA": "Abonnez-vous pour des conseils exclusifs sur la musculation et le fitness",
+      "articlePrincipal": {
+        "titre": "Les meilleurs programmes de musculation pour prendre de la masse",
+        "description": "Découvrez les programmes d'entraînement les plus efficaces pour développer votre musculature et atteindre vos objectifs.",
+        "date": "1er Décembre 2024",
+        "theme": "Entraînement",
+        "image": "images/image.png"
+      },
+      "articles": [
+        {
+          "titre": "Les erreurs courantes à éviter lors de vos séances de musculation",
+          "date": "28 Novembre 2024",
+          "theme": "Conseils",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Alimentation pour les sportifs : Les secrets d'une prise de masse réussie",
+          "date": "20 Novembre 2024",
+          "theme": "Nutrition",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Cardio vs musculation : Quel est le meilleur pour brûler les graisses ?",
+          "date": "15 Novembre 2024",
+          "theme": "Entraînement",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Les meilleures applications pour suivre votre progression en fitness",
+          "date": "10 Novembre 2024",
+          "theme": "Technologies",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Le stretching après l'entraînement : Pourquoi est-ce essentiel ?",
+          "date": "5 Novembre 2024",
+          "theme": "Récupération",
+          "image": "images/image.png"
+        }
+      ],
+      "themes": [
+        {
+          "nom": "Entraînement",
+          "description": "Des programmes et astuces pour améliorer vos performances en musculation et fitness."
+        },
+        {
+          "nom": "Nutrition",
+          "description": "Les conseils alimentaires pour soutenir votre entraînement et optimiser vos résultats."
+        },
+        {
+          "nom": "Conseils",
+          "description": "Des recommandations pratiques pour maximiser l'efficacité de vos séances."
+        },
+        {
+          "nom": "Technologies",
+          "description": "Les applications et outils numériques pour suivre et améliorer vos entraînements."
+        },
+        {
+          "nom": "Récupération",
+          "description": "Les techniques de récupération pour éviter les blessures et favoriser la croissance musculaire."
+        }
+      ],
+      "auteurs": [
+        {
+          "prenom": "David",
+          "typeExperience": "Coach sportif",
+          "presentation": "Spécialiste de la musculation et de la performance, je vous aide à maximiser vos entraînements."
+        },
+        {
+          "prenom": "Sophie",
+          "typeExperience": "Nutritionniste spécialisée en sport",
+          "presentation": "Je partage des conseils alimentaires adaptés pour les athlètes et passionnés de fitness."
+        },
+        {
+          "prenom": "Marc",
+          "typeExperience": "Préparateur physique",
+          "presentation": "Expert en musculation et performance, j'élabore des programmes sur mesure pour atteindre vos objectifs."
+        }
+      ]
+    }
+  }
+  
