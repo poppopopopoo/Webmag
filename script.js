@@ -51,20 +51,25 @@ function afficherHeader(nomNews, textAccroche) {
 }
 
 function afficherThemes(themes) {
-  let themesSection = document.getElementById("themes");
-
-  let themesContent = "<h2>Thèmes</h2>"; 
-  themes.forEach(theme => {
-     themesContent += `
-        <div>
-           <h3>${theme.nom}</h3>
-           <p>${theme.description}</p>
-        </div>
+   let themesSection = document.getElementById("themes");
+   themesSection.innerHTML = `<h2>Thèmes</h2>`;
+ 
+  let container = document.createElement("div");
+   container.id = "themes-container";
+ 
+   themes.forEach(theme => {
+     let themeDiv = document.createElement("div");
+     themeDiv.id = theme.id;
+     themeDiv.innerHTML = `
+       <h3>${theme.nom}</h3>
+       <p>${theme.description}</p>
      `;
-  });
-
-  themesSection.innerHTML = themesContent;
-}
+     container.appendChild(themeDiv);
+   });
+ 
+   themesSection.appendChild(container);
+ }
+ 
 
 
 function afficherArticlePrincipal(articleP) {
@@ -72,7 +77,7 @@ function afficherArticlePrincipal(articleP) {
 
  let articleContent = `
      <div class="article-container">
-        <img src="${articleP.image}" alt="${articleP.titre}" class="article-image">
+        <img src="${articleP.image}" alt="${articleP.titre}" class="article-main-image">
         <div class="article-content">
            <h2>${articleP.titre}</h2>
            <p class="article-meta">${articleP.theme} - ${articleP.date}</p>
@@ -87,7 +92,7 @@ function afficherArticlePrincipal(articleP) {
 
 function afficherArticles(articles) {
   let articlesSection = document.getElementById("articles-liste");
-  let listArticles; 
+  let listArticles = ""; 
 
   articles.forEach(article => {
     listArticles += `
@@ -109,26 +114,30 @@ function afficherArticles(articles) {
 function afficherNav() {
   let nav = document.getElementById("nav");
 
-  let navHTML = `
-<div class="nav-container">
-         <div class="nav-left">
-            <img src="logo.svg" alt="Logo" class="nav-logo">
-            <span class="nav-title">nomJournal</span>
-         </div>
-         <ul class="nav-links">
-            <li><a href="#themes">Thème 1</a></li>
-            <li><a href="#themes">Thème 2</a></li>
-            <li><a href="#themes">Thème 3</a></li>
-            <li><a href="#themes">Thème 4</a></li>
-         </ul>
-         <div class="nav-right">
-            <button class="btn-subscribe">S'abonner</button>
-            <img src="image.png" alt="Profil" class="nav-profile">
-         </div>
-      </div>
+  let navContent = `
+<nav>
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="images/logo.svg" alt="Logo Muscle & Fitness" class="nav-logo">
+      <h1 class="nav-title">Muscle & Fitness</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#header">Accueil</a></li>
+      <li><a href="#entrainement">Entraînement</a></li>
+      <li><a href="#nutrition">Nutrition</a></li>
+      <li><a href="#conseils">Conseils</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#recuperation">Récupération</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-subscribe">S'abonner</button>
+      <img src="images/chienProfil.jpg" alt="Profil utilisateur" class="nav-profile">
+    </div>
+  </div>
+</nav>
   `;
 
-  nav.innerHTML = navHTML;
+  nav.innerHTML = navContent;
 }
 
 function afficherEquipe(auteurs) {
@@ -136,31 +145,31 @@ function afficherEquipe(auteurs) {
   let equipeSection = document.getElementById("equipe");
 
 
-  let equipeHTML = "<h2>Découvrez notre équipe</h2>";
+  let equipeContent = "<h2>Découvrez notre équipe</h2>";
 
   auteurs.forEach(auteur => {
-     equipeHTML += `
+     equipeContent += `
         <div class="auteur-item">
-           <img src="${auteur.photo}" alt="${auteur.prenom}" class="auteur-photo">
+           <img src="${auteur.image}" alt="${auteur.prenom}" class="auteur-photo">
            <h3>${auteur.prenom}</h3>
            <p>${auteur.description}</p>
         </div>
      `;
   });
 
-  equipeSection.innerHTML = equipeHTML;
+  equipeSection.innerHTML = equipeContent;
 }
 
 
 function afficherFooter() {
   let footer = document.getElementById("footer");
 
-  let footerHTML = `
+  let footerContent = `
      <div class="footer-container">
         <p>&copy; Muscle & Fitness 2024</p>
         <p>Votre source d'actualité et d'inspiration.</p>
      </div>
   `;
-  footer.innerHTML = footerHTML;
+  footer.innerHTML = footerContent;
 }
 

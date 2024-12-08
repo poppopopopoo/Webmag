@@ -8,77 +8,95 @@
         "description": "Découvrez les programmes d'entraînement les plus efficaces pour développer votre musculature et atteindre vos objectifs.",
         "date": "1er Décembre 2024",
         "theme": "Entraînement",
-        "image": "images/image.png"
+        "image": "images/FitnessMusculation.jpg"
       },
       "articles": [
         {
           "titre": "Les erreurs courantes à éviter lors de vos séances de musculation",
           "date": "28 Novembre 2024",
           "theme": "Conseils",
-          "image": "images/image.png"
+          "image": "images/coach personnel.jpg"
+        
         },
         {
           "titre": "Alimentation pour les sportifs : Les secrets d'une prise de masse réussie",
           "date": "20 Novembre 2024",
           "theme": "Nutrition",
-          "image": "images/image.png"
+          "image": "images/platSain.png"
+          
         },
         {
           "titre": "Cardio vs musculation : Quel est le meilleur pour brûler les graisses ?",
           "date": "15 Novembre 2024",
           "theme": "Entraînement",
-          "image": "images/image.png"
+          "image": "images/Cardio_vs_musculation.jpg"
         },
         {
           "titre": "Les meilleures applications pour suivre votre progression en fitness",
           "date": "10 Novembre 2024",
           "theme": "Technologies",
-          "image": "images/image.png"
+          "image": "images/Progression-App.jpg"
+
         },
         {
           "titre": "Le stretching après l'entraînement : Pourquoi est-ce essentiel ?",
           "date": "5 Novembre 2024",
           "theme": "Récupération",
-          "image": "images/image.png"
+          "image": "images/stretching.jpg.webp"
+          
+
+
         }
       ],
       "themes": [
         {
           "nom": "Entraînement",
-          "description": "Des programmes et astuces pour améliorer vos performances en musculation et fitness."
+          "description": "Des programmes et astuces pour améliorer vos performances en musculation et fitness.",
+          "id": "conseils"
         },
         {
           "nom": "Nutrition",
-          "description": "Les conseils alimentaires pour soutenir votre entraînement et optimiser vos résultats."
+          "description": "Les conseils alimentaires pour soutenir votre entraînement et optimiser vos résultats.",
+          "id": "nutrition"
         },
         {
           "nom": "Conseils",
-          "description": "Des recommandations pratiques pour maximiser l'efficacité de vos séances."
+          "description": "Des recommandations pratiques pour maximiser l'efficacité de vos séances.",
+          "id": "entrainement"
+
         },
         {
           "nom": "Technologies",
-          "description": "Les applications et outils numériques pour suivre et améliorer vos entraînements."
+          "description": "Les applications et outils numériques pour suivre et améliorer vos entraînements.",
+          "id": "technologies"
         },
         {
           "nom": "Récupération",
-          "description": "Les techniques de récupération pour éviter les blessures et favoriser la croissance musculaire."
+          "description": "Les techniques de récupération pour éviter les blessures et favoriser la croissance musculaire.",
+          "id": "recuperation"
         }
       ],
       "auteurs": [
         {
           "prenom": "David",
           "typeExperience": "Coach sportif",
-          "presentation": "Spécialiste de la musculation et de la performance, je vous aide à maximiser vos entraînements."
+          "presentation": "Spécialiste de la musculation et de la performance, je vous aide à maximiser vos entraînements.",
+          "image": "images/david-ceva-coach-sportif.jpg"
+
         },
         {
           "prenom": "Sophie",
           "typeExperience": "Nutritionniste spécialisée en sport",
-          "presentation": "Je partage des conseils alimentaires adaptés pour les athlètes et passionnés de fitness."
+          "presentation": "Je partage des conseils alimentaires adaptés pour les athlètes et passionnés de fitness.",
+          "image": "images/SophieNutritionniste.jpg"
+
         },
         {
           "prenom": "Marc",
           "typeExperience": "Préparateur physique",
-          "presentation": "Expert en musculation et performance, j'élabore des programmes sur mesure pour atteindre vos objectifs."
+          "presentation": "Expert en musculation et performance, j'élabore des programmes sur mesure pour atteindre vos objectifs.",
+          "image": "images/PréparateurPhysique.jpg"
+
         }
       ]
     }
